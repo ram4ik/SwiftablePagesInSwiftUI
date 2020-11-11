@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		1DE140CE255C815D00C415E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE140CD255C815D00C415E6 /* ContentView.swift */; };
 		1DE140D0255C816300C415E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE140CF255C816300C415E6 /* Assets.xcassets */; };
 		1DE140D3255C816300C415E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE140D2255C816300C415E6 /* Preview Assets.xcassets */; };
+		1DE140DD255C819E00C415E6 /* iPages in Frameworks */ = {isa = PBXBuildFile; productRef = 1DE140DC255C819E00C415E6 /* iPages */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE140DD255C819E00C415E6 /* iPages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = SwiftablePagesInSwiftUI;
+			packageProductDependencies = (
+				1DE140DC255C819E00C415E6 /* iPages */,
+			);
 			productName = SwiftablePagesInSwiftUI;
 			productReference = 1DE140C8255C815D00C415E6 /* SwiftablePagesInSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 1DE140BF255C815D00C415E6;
+			packageReferences = (
+				1DE140DB255C819E00C415E6 /* XCRemoteSwiftPackageReference "iPages" */,
+			);
 			productRefGroup = 1DE140C9255C815D00C415E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1DE140DB255C819E00C415E6 /* XCRemoteSwiftPackageReference "iPages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benjaminsage/iPages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.10;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1DE140DC255C819E00C415E6 /* iPages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DE140DB255C819E00C415E6 /* XCRemoteSwiftPackageReference "iPages" */;
+			productName = iPages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1DE140C0255C815D00C415E6 /* Project object */;
 }

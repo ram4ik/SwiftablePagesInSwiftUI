@@ -6,11 +6,19 @@
 //
 
 import SwiftUI
+import iPages
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        iPages {
+            Color.blue
+            Color.green
+            Color.purple
+            Color.orange
+        }
+        .navigationOrientation(.horizontal)
+        .dotsBackgroundStyle(.prominent)
+        .dotsAlignment(.bottom)
     }
 }
 
